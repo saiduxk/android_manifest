@@ -5,6 +5,12 @@
   <remote name="github"
           fetch="https://github.com/" />
 
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <remote name="saiduxk"
+          fetch="https://github.com/saiduxk" />
+
   <remote name="404"
           fetch="https://github.com/P-404/"
           revision="tokui" />
@@ -118,6 +124,7 @@
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="404" />
 
   <!-- Prebuilts -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="cygnus-rom/prebuilts_clang_host_linux-x86_clang-r416183b1" remote="gitlab" revision="caf-13" />
   <remove-project name="platform/prebuilts/abi-dumps/ndk" />
   <project path="prebuilts/abi-dumps/ndk" name="android_prebuilts_abi-dumps_ndk" remote="404" />
   <remove-project name="platform/prebuilts/abi-dumps/vndk" />
@@ -149,7 +156,7 @@
   <project path="system/sepolicy" name="android_system_sepolicy" remote="404" caf="platform/system/sepolicy" />
   
   <!-- Vendor -->
-  <project path="vendor/404" name="android_vendor_404" remote="404" />
+  <project path="vendor/404" name="android_vendor_404" remote="saiduxk" />
   <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="404" />
   <project path="vendor/gms" name="proprietary_vendor_gms" remote="404-gitlab" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="404" />
